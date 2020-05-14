@@ -1,41 +1,33 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# last-item-index [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/last-item-index/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/last-item-index)
 
-My awesome module.
+Get the index of the last item in an array.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/last-item-index.png)](https://npmjs.com/package/last-item-index)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install last-item-index
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const lastItemIndex = require("last-item-index")
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+lastItemIndex([1, 2, 3]);
+//=> 2
+
+lastItemIndex([]);
+//=> undefined
 ```
 
 ## API
 
-### theModule(input, options?)
+### lastItemIndex(array)
 
-#### input
+#### array
 
-Type: `string`
+Type: `array`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The array to get the index for.
